@@ -42,7 +42,9 @@ function App() {
     <div
       ref={parentRef}
     >
-      {/* children */}
+      {messages.map(message => (
+        {/* children */}
+      ))}
     </div>
   );
 }
