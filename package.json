@@ -1,6 +1,6 @@
 {
   "name": "intersection-counter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,8 +29,8 @@
   "module": "dist/index.es.js",
   "exports": {
     ".": {
-      "exports": "./dist/index.umd.js",
-      "imports": "./dist/index.es.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "files": [
