@@ -1,3 +1,5 @@
+https://user-images.githubusercontent.com/52901335/192902912-63916e32-9c8a-4719-8d4e-1a980ec5f24c.mp4
+
 # Intersection Counter
 
 A way to track the count of elements yet to enter the viewport.
