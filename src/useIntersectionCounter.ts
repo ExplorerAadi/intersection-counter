@@ -10,7 +10,6 @@ export const useIntersectionCounter = (options: IntersectionObserverInit) => {
 
       for (let i = entries.length - 1; i >= 0; i--) {
         const entry = entries[i];
-
         if (entry.isIntersecting) {
           lastEntry = entry;
           break;
@@ -64,7 +63,7 @@ export const useIntersectionCounter = (options: IntersectionObserverInit) => {
   }, [parentRef, callback]);
 
   return {
-    parentRef: parentRef,
+    parentRef,
     count,
   };
 };

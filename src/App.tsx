@@ -9,7 +9,8 @@ const options = {
 };
 
 function App() {
-  const { parentRef } = useIntersectionCounter(options);
+  const { parentRef, count } = useIntersectionCounter(options);
+  console.log(count);
 
   return (
     <div
@@ -25,11 +26,9 @@ function App() {
 
 const Card = ({ index }: { index: number }) => {
   return (
-    <>
-      <div id={`${index}`} className={tw("w-12 h-12 m-2 text-gray-200")}>
-        {index}
-      </div>
-    </>
+    <div id={`${index}`} className={tw("w-32 h-32 m-2 text-gray-200")}>
+      {index}
+    </div>
   );
 };
 
